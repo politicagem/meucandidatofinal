@@ -1,77 +1,89 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>teste</title>
-</head>
-<body>
-	<div class="topnav" id="myTopnav">
-		<img src="img/logo.png" class="logo">
-  		<a href="quemsomos.html" class="active">QUEM SOMOS</a>
-  		<a href="candidatos.html">CANDIDATOS</a>
-  		<a href="index.html">HOME</a>
-  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-
-</div>
-	
-
-
-<div id="carousel" class="carousel">
-        <input class="carousel-active" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden checked="checked">
-        <div class="carousel-item">
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <title>Meu Candidato</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <img src="img/logo.png" class="logo">
+      <a href="quemsomos.html" class="active"> QUEM SOMOS</a>
+      <a href="candidatos.html">CANDIDATOS</a>
+      <a href="index.html">HOME</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    <header class=h-img"">
+      <h1> MEU CANDIDATO</h1>
+      <form class="pesquisa">
+        <input id="texto" type="text">
+        <img src="img/lupa.png" class="btn" alt="Pesquisar">
+      </form>
+      <p class="texto">Você acha que conhece seu candidato?</p>
+    </header>
+    
+    <div id="carousel" class="carousel">
+      <input class="carrossel-ativo" type="radio" id="slide-1" name="carousel" aria-hidden="true" hidden checked="checked">
+      <div class="carousel-item">
         <div class="carousel-controls" aria-hidden="true">
-        <label for="carousel-3" class="carousel-control prev" title="Prev">«</label>
-        <label for="carousel-2" class="carousel-control next" title="Next">»</label>
+          <label for="slide-3" class="carrossel-controle anterior">«</label>
+          <label for="slide-2" class="carrossel-controle proximo">»</label>
         </div>
-        <img src="img/1.jpg" alt="First slide">
+        <img src="img/1.jpg" >
+        <div class="carousel-caption">
+          <h6> Feirantes prejudicados</h6>
+          <h2>Inflação sobre produtos agrícolas causa transtorno</h2>
         </div>
-        
-        <input class="carousel-active" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden>
-         <div class="carousel-item">
-         <div class="carousel-controls" aria-hidden="true">
-             <label for="carousel-1" class="carousel-control prev" title="Prev">«</label>
-             <label for="carousel-3" class="carousel-control next" title="Next">»</label>
-              </div>
-                  <img src="img/2.jpg" alt="Blank image">
-                  <div class="carousel-caption">
-                    <h2> <br><small> <i></i></small></h2>
-                    <p></p>
-                  </div>
-                </div>
-              
-                <input class="carousel-active" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden>
-                <div class="carousel-item">
-                  <div class="carousel-controls" aria-hidden="true">
-                    <label for="carousel-2" class="carousel-control prev" title="Prev">«</label>
-                    <label for="carousel-1" class="carousel-control next" title="Next">»</label>
-                  </div>
-                  <img src="img/3.jpg" alt="Third slide">
-                </div>
-              
-                <ol class="carousel-indicators" aria-label="Carousel navigation" aria-hidden="true">
-                  <li>
-                    <label for="carousel-1" class="carousel-indicator" title="Jump to carousel item #1">●</label>
-                  </li>
-                  <li>
-                    <label for="carousel-2" class="carousel-indicator" title="Jump to carousel item #2">●</label>
-                  </li>
-                  <li>
-                    <label for="carousel-3" class="carousel-indicator" title="Jump to carousel item #3">●</label>
-                  </li>
-                </ol>
-              </div>
-
-
-<section>
-	<footer>
-        <p class="rodape">
-            © 2018 - Meu Candidato - todos direitos reservados.
-        </p>
-
+      </div>
+      
+      <input class="carrossel-ativo" type="radio" id="slide-2" name="carousel" aria-hidden="true" hidden>
+      <div class="carousel-item">
+        <div class="carousel-controls" aria-hidden="true">
+          <label for="slide-1" class="carrossel-controle anterior">«</label>
+          <label for="slide-3" class="carrossel-controle proximo">»</label>
+        </div>
+        <img src="img/2.jpg" >
+        <div class="carousel-caption">
+          <h6> Intervenção militar no Rio </h6>
+          <h2>Saiba o que os pré candidatos à presidencia pensam sobre</h2>
+        </div>
+      </div>
+      
+      <input class="carrossel-ativo" type="radio" id="slide-3" name="carousel" aria-hidden="true" hidden>
+      <div class="carousel-item">
+        <div class="carousel-controls" aria-hidden="true">
+          <label for="slide-2" class="carrossel-controle anterior">«</label>
+          <label for="slide-1" class="carrossel-controle proximo">»</label>
+        </div>
+        <img src="img/3.jpg">
+        <div class="carousel-caption">
+          <h6> Mão de obra qualificada </h6>
+          <h2>Aumenta a demanda de mão de obra especializada</h2>
+        </div>
+      </div>
+      
+      <ol class="carousel-indicators" aria-label="Carousel navigation" aria-hidden="true">
+        <li>
+          <label for="slide-1" class="carousel-indicator">●</label>
+        </li>
+        <li>
+          <label for="slide-2" class="carousel-indicator">●</label>
+        </li>
+        <li>
+          <label for="slide-3" class="carousel-indicator">●</label>
+        </li>
+      </ol>
+    </div>
+    
+    <footer>
+      <p class="rodape">
+        © 2018 - Meu Candidato - todos direitos reservados.
+      </p>
     </footer>
-</section>
-
-<script src="script.js"></script>
-</body>
-</html>
+    
+    <script src="script.js"></script>
+  </body>
+  </html>
